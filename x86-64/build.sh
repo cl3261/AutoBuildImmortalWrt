@@ -22,10 +22,28 @@ PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
 PACKAGES="$PACKAGES luci-app-openclash"
 PACKAGES="$PACKAGES luci-i18n-homeproxy-zh-cn"
 PACKAGES="$PACKAGES openssh-sftp-server"
+PACKAGES="$PACKAGES luci-app-smartdns"
+PACKAGES="$PACKAGES luci-i18n-smartdns-zh-cn"
+PACKAGES="$PACKAGES luci-app-poweroff"
+PACKAGES="$PACKAGES luci-i18n-poweroff-zh-cn"
+PACKAGES="$PACKAGES luci-app-adguardhome"
+PACKAGES="$PACKAGES luci-i18n-adguardhome-zh-cn"
+PACKAGES="$PACKAGES luci-app-mosdns"
+PACKAGES="$PACKAGES luci-i18n-mosdns-zh-cn"
+PACKAGES="$PACKAGES luci-app-lucky"
+PACKAGES="$PACKAGES luci-i18n-lucky-zh-cn"
+PACKAGES="$PACKAGES luci-app-filetransfer"
+PACKAGES="$PACKAGES luci-i18n-filetransfer-zh-cn"
+PACKAGES="$PACKAGES luci-app-autoreboot"
+PACKAGES="$PACKAGES luci-i18n-autoreboot-zh-cn"
+PACKAGES="$PACKAGES luci-app-netdata"
+PACKAGES="$PACKAGES luci-i18n-netdata-zh-cn"
+PACKAGES="$PACKAGES luci-app-wireguard"
+PACKAGES="$PACKAGES luci-i18n-wireguard-zh-cn"
 
 # 判断是否需要编译 Docker 插件
-if [ "$INCLUDE_DOCKER" = "yes" ]; then
-    PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
+if [ "$INCLUDE_DOCKER" = "no" ]; then
+   PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
     echo "Adding package: luci-i18n-dockerman-zh-cn"
 fi
 
